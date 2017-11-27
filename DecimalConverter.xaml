@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JarkomGuide.DecimalConverter">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+				<Label Text="Masukan Angka Biner"></Label>
+			<Grid>
+			  <Grid.RowDefinitions>
+			    <RowDefinition Height="*" />
+			    <RowDefinition Height="*" />
+			  </Grid.RowDefinitions>
+			  <Grid.ColumnDefinitions>
+			    <ColumnDefinition Width="*" />
+			    <ColumnDefinition Width="*" />
+			  </Grid.ColumnDefinitions>
+			  <Entry Placeholder="" x:Name="binersatu"  Grid.Row="0" Grid.Column="0" />
+			  <Entry Placeholder="" x:Name="binerdua"  Grid.Row="0" Grid.Column="1" />
+			  <Entry Placeholder="" x:Name="binertiga"  Grid.Row="0" Grid.Column="2" />
+			  <Entry Placeholder="" x:Name="binerempat"  Grid.Row="0" Grid.Column="3" />
+			</Grid>
+				
+				<Button Text="Konversi" HeightRequest="60" BackgroundColor="#3498db" TextColor="White" Clicked="prosesdecimal"></Button>
+
+			<Label Text="Hasil Konversi"></Label>
+				<Grid>
+			  <Grid.RowDefinitions>
+			    <RowDefinition Height="*" />
+			    <RowDefinition Height="*" />
+			  </Grid.RowDefinitions>
+			  <Grid.ColumnDefinitions>
+			    <ColumnDefinition Width="*" />
+			    <ColumnDefinition Width="*" />
+			  </Grid.ColumnDefinitions>
+			  <Label Text="" x:Name="ipsatu"  Grid.Row="0" Grid.Column="0" FontAttributes="Bold" />
+			  <Label Text="" x:Name="ipdua"  Grid.Row="0" Grid.Column="1" FontAttributes="Bold" />
+			  <Label Text="" x:Name="iptiga"  Grid.Row="0" Grid.Column="2" FontAttributes="Bold" />
+			  <Label Text="" x:Name="ipempat"  Grid.Row="0" Grid.Column="3" FontAttributes="Bold" />
+			</Grid>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

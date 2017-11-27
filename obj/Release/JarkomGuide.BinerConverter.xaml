@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JarkomGuide.BinerConverter">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+				<Label Text="Masukan IP Address"></Label>
+			<Grid>
+			  <Grid.RowDefinitions>
+			    <RowDefinition Height="*" />
+			    <RowDefinition Height="*" />
+			  </Grid.RowDefinitions>
+			  <Grid.ColumnDefinitions>
+			    <ColumnDefinition Width="*" />
+			    <ColumnDefinition Width="*" />
+			  </Grid.ColumnDefinitions>
+			  <Entry Placeholder="" x:Name="ipsatu" Keyboard="Numeric" Grid.Row="0" Grid.Column="0" />
+			  <Entry Placeholder="" x:Name="ipdua" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" />
+			  <Entry Placeholder="" x:Name="iptiga" Keyboard="Numeric" Grid.Row="0" Grid.Column="2" />
+			  <Entry Placeholder="" x:Name="ipempat" Keyboard="Numeric" Grid.Row="0" Grid.Column="3" />
+			</Grid>
+				
+				<Button Text="Konversi" HeightRequest="60" BackgroundColor="#3498db" TextColor="White" Clicked="prosesbiner"></Button>
+
+			<Label Text="Hasil Konversi"></Label>
+				<Grid>
+			  <Grid.RowDefinitions>
+			    <RowDefinition Height="*" />
+			    <RowDefinition Height="*" />
+			  </Grid.RowDefinitions>
+			  <Grid.ColumnDefinitions>
+			    <ColumnDefinition Width="*" />
+			    <ColumnDefinition Width="*" />
+			  </Grid.ColumnDefinitions>
+			  <Label Text="" x:Name="hasilsatu"  Grid.Row="0" Grid.Column="0" FontAttributes="Bold" />
+			  <Label Text="" x:Name="hasildua"  Grid.Row="0" Grid.Column="1" FontAttributes="Bold" />
+			  <Label Text="" x:Name="hasiltiga"  Grid.Row="0" Grid.Column="2" FontAttributes="Bold" />
+			  <Label Text="" x:Name="hasilempat"  Grid.Row="0" Grid.Column="3" FontAttributes="Bold" />
+			</Grid>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
